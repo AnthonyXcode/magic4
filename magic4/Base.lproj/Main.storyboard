@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="magic4" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Wb-Vw-oMy">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="3zm-6V-4Vc"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Bb7-wK-tsf"/>
+                                    <constraint firstAttribute="width" constant="300" id="N0Y-0A-TiS"/>
+                                    <constraint firstAttribute="height" constant="300" id="gA1-mE-e8U"/>
+                                    <constraint firstAttribute="height" constant="300" id="j36-ZP-yh2"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3zm-6V-4Vc"/>
+                                        <exclude reference="Bb7-wK-tsf"/>
+                                        <exclude reference="gA1-mE-e8U"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0Wb-Vw-oMy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C9f-to-LC2"/>
+                            <constraint firstItem="0Wb-Vw-oMy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="216" id="MlG-mZ-Pi8"/>
+                            <constraint firstItem="0Wb-Vw-oMy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="216" id="VMb-fV-nZw"/>
+                            <constraint firstItem="0Wb-Vw-oMy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iF8-bg-4k2"/>
+                            <constraint firstItem="0Wb-Vw-oMy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kgC-Na-8m6"/>
+                            <constraint firstItem="0Wb-Vw-oMy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qqL-pg-5cF"/>
+                            <constraint firstItem="0Wb-Vw-oMy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xWi-GV-PFN"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="MlG-mZ-Pi8"/>
+                                <exclude reference="VMb-fV-nZw"/>
+                                <exclude reference="iF8-bg-4k2"/>
+                                <exclude reference="kgC-Na-8m6"/>
+                                <exclude reference="xWi-GV-PFN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="0Wb-Vw-oMy" id="dVK-D2-mfP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
